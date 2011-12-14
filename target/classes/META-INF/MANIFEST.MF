@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Export-Package: jp.vdmtools.astah.plugin;uses:="com.change_vision.jude
+ .api.inf.exception,javax.swing,org.osgi.framework,com.change_vision.j
+ ude.api.inf.model,com.change_vision.jude.api.inf.project,com.change_v
+ ision.jude.api.inf.ui,jp.vdmtools.astah.plugin.util";version="1.0.0.S
+ NAPSHOT",jp.vdmtools.astah.plugin.util;uses:="javax.swing";version="1
+ .0.0.SNAPSHOT"
+Private-Package: com.change_vision.astah.extension.plugin.util,org.apa
+ che.commons.lang3,org.apache.commons.lang3.builder,org.apache.commons
+ .lang3.concurrent,org.apache.commons.lang3.event,org.apache.commons.l
+ ang3.exception,org.apache.commons.lang3.math,org.apache.commons.lang3
+ .mutable,org.apache.commons.lang3.reflect,org.apache.commons.lang3.te
+ xt,org.apache.commons.lang3.text.translate,org.apache.commons.lang3.t
+ ime,org.apache.commons.lang3.tuple,templates
+Bundle-ClassPath: .,commons-lang3-3.1.jar
+Built-By: mas
+Tool: Bnd-0.0.255
+Bundle-Name: %bundle.name
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_29
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1323833183389
+Bundle-ManifestVersion: 2
+Bundle-Activator: jp.vdmtools.astah.plugin.Activator
+Bundle-Description: %bundle.description
+Embed-Dependency: *;scope=compile|runtime;type=!pom
+Import-Package: com.change_vision.jude.api.inf.exception;resolution:=o
+ ptional,com.change_vision.jude.api.inf.model;resolution:=optional,com
+ .change_vision.jude.api.inf.project;resolution:=optional,com.change_v
+ ision.jude.api.inf.ui;resolution:=optional,com.change_vision.jude.api
+ .inf.view;resolution:=optional,javax.swing;resolution:=optional,jp.vd
+ mtools.astah.plugin;resolution:=optional;version="1.0.0.SNAPSHOT",jp.
+ vdmtools.astah.plugin.util;resolution:=optional;version="1.0.0.SNAPSH
+ OT",org.osgi.framework;resolution:=optional
+Bundle-SymbolicName: jp.vdmtools.astah.plugin.VDMLink; singleton:=true
+
