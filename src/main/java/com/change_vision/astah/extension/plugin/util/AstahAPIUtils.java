@@ -2,6 +2,7 @@ package com.change_vision.astah.extension.plugin.util;
 
 import javax.swing.JFrame;
 
+import com.change_vision.jude.api.inf.exception.InvalidUsingException;
 import com.change_vision.jude.api.inf.project.ProjectAccessor;
 import com.change_vision.jude.api.inf.project.ProjectAccessorFactory;
 
@@ -31,7 +32,11 @@ public class AstahAPIUtils {
    * @return JFrame
    */
   public JFrame getMainFrame() {
-    return getProjectAccessor().getViewManager().getMainFrame();
+    try {
+      return getProjectAccessor().getViewManager().getMainFrame();
+    } catch (InvalidUsingException e) {
+      throw new IllegalStateException(e);
+    }
   }
 
 }

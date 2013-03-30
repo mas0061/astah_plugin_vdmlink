@@ -1,10 +1,6 @@
 package jp.vdmtools.astah.plugin;
 
-import java.awt.FileDialog;
-
 import javax.swing.JOptionPane;
-
-import jp.vdmtools.astah.plugin.util.FileChooseWrapper;
 
 import com.change_vision.astah.extension.plugin.util.AstahAPIUtils;
 import com.change_vision.jude.api.inf.exception.LicenseNotFoundException;
